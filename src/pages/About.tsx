@@ -7,13 +7,13 @@ export default function About() {
       <h1 className="mt-4 font-serif text-3xl text-brand-50 md:text-5xl">ARCO STUDIO</h1>
       <p className="mt-2 text-brand-300">Architecture Consultancy &amp; Engineering Services</p>
 
-      <div className="mt-16 grid gap-16 md:grid-cols-2">
+      <div className="mt-16 grid gap-16 md:grid-cols-2"> 
         <div>
           <h2 className="font-serif text-3xl text-brand-50 md:text-4xl">Our Story</h2>
           <p className="mt-6 leading-relaxed text-brand-300">
-            ARCO STUDIO is a dynamic and innovative architectural firm based at Laxmi Road, Nehru
-            Colony, Dehradun, Uttarakhand. Founded in {COMPANY.founded} by {COMPANY.almaMater} alumni
-            {' '}Mohammad Aneesh and Sudha Dabral, we are dedicated to transforming spaces with
+            ARCO STUDIO is a dynamic and innovative architectural firm based at B-227, Laxmi Road, Nehru
+            Colony, Dehradun, Uttarakhand. Founded in {COMPANY.founded} by
+            {' '}Mohammad Aneesh and Sudha Dabral, alumni of DIT University, Dehradun. We are dedicated to transforming spaces with
             creativity, structural precision, and adherence to {COMPANY.council} standards. Our
             expertise spans across residential, commercial, housing, interior design, and
             institutional projects across Uttarakhand.
@@ -22,7 +22,7 @@ export default function About() {
             At ARCO STUDIO, the value of our work stems from its positive impact on the human
             experience. We are a dynamic and collaborative design firm uniting creativity, research and
             innovation to solve complex problems for our clients. Our work challenges conventional ideas
-            about architecture and the built environment. We aren't just designing buildings — we are
+            about architecture and the built environment. We aren't just designing buildings, we are
             reimagining spaces that make a difference in people's lives.
           </p>
         </div>

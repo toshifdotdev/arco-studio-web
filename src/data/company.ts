@@ -27,7 +27,7 @@ export const COMPANY = {
   phone: '+91 7409265567, +91 9870803156',
   phones: ['+917409265567', '+919870803156'],
   email: 'arcostudio622@gmail.com',
-  hours: 'Mon – Sat, 10:00 AM – 7:00 PM',
+  hours: 'Mon – Sat, 10:00 AM – 6:00 PM',
   council: 'Council of Architecture (COA)',
   almaMater: 'DIT University, Dehradun',
   geo: {
