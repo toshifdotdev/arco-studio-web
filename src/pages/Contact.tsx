@@ -92,19 +92,41 @@ export default function Contact() {
 
         <div className="space-y-6">
           <ul className="space-y-4 text-brand-300">
-            <li className="flex gap-3"><MapPin className="h-5 w-5 text-accent" /> {COMPANY.address}</li>
-            <li className="flex gap-3"><Phone className="h-5 w-5 text-accent" /> {COMPANY.phone}</li>
-            <li className="flex gap-3"><Mail className="h-5 w-5 text-accent" /> {COMPANY.email}</li>
-            <li className="flex gap-3"><Clock className="h-5 w-5 text-accent" /> {COMPANY.hours}</li>
+            <li className="flex gap-3">
+              <MapPin className="h-5 w-5 shrink-0 text-accent" />
+              <a
+                href={COMPANY.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-accent"
+              >
+                {COMPANY.address}
+              </a>
+            </li>
+            <li className="flex gap-3"><Phone className="h-5 w-5 shrink-0 text-accent" /> {COMPANY.phone}</li>
+            <li className="flex gap-3"><Mail className="h-5 w-5 shrink-0 text-accent" /> {COMPANY.email}</li>
+            <li className="flex gap-3"><Clock className="h-5 w-5 shrink-0 text-accent" /> {COMPANY.hours}</li>
           </ul>
-          <div className="aspect-video w-full overflow-hidden border border-brand-700/60">
-            <iframe
-              title="ARCO STUDIO location"
-              src={`https://www.google.com/maps?q=${encodeURIComponent(COMPANY.address)}&output=embed`}
-              className="h-full w-full"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+          <div>
+            <div className="aspect-video w-full overflow-hidden border border-brand-700/60">
+              <iframe
+                title="ARCO STUDIO location on Google Maps"
+                src="https://www.google.com/maps?q=30.3031352,78.0526562&hl=en&z=17&output=embed"
+                className="h-full w-full"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+            <div className="mt-3 text-right">
+              <a
+                href={COMPANY.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-accent transition hover:underline"
+              >
+                Get Directions on Google Maps &rarr;
+              </a>
+            </div>
           </div>
         </div>
       </div>

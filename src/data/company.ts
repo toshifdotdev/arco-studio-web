@@ -28,13 +28,14 @@ export const COMPANY = {
   phones: ['+917409265567', '+919870803156'],
   email: 'arcostudio622@gmail.com',
   hours: 'Mon – Sat, 10:00 AM – 6:00 PM',
+  mapUrl: 'https://maps.app.goo.gl/pUNqgsje4Tr25KEe6',
   council: 'Council of Architecture (COA)',
   almaMater: 'DIT University, Dehradun',
   geo: {
     region: 'IN-UT',
     placename: 'Nehru Colony, Dehradun, Uttarakhand, India',
-    latitude: 30.2988,
-    longitude: 78.056,
+    latitude: 30.3031352,
+    longitude: 78.0526562,
   },
 }
 

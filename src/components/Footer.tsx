@@ -35,7 +35,14 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-brand-300">
               <li className="flex gap-3">
                 <MapPin className="h-4 w-4 shrink-0 text-accent" />
-                <span>{COMPANY.address}</span>
+                <a
+                  href={COMPANY.mapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-accent"
+                >
+                  {COMPANY.address}
+                </a>
               </li>
               <li className="flex gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-accent" />
